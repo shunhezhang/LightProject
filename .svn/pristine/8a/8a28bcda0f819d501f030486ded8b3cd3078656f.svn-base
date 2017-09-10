@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.zplusi.lightProject.dao.administrator.AdministratorDao"> 
+ 
+    <resultMap type="com.zplusi.lightProject.bean.administrator.Administrator" id="administrator"> 
+        <id property="administratorId" column="administratorId"/> 
+        <result property="name" column="name"/> 
+        <result property="account" column="account"/>
+        <result property="password" column="password"/>
+        <result property="gender" column="gender"/>
+        <result property="status" column="status"/>
+        <result property="isDeleted" column="isDeleted"/> 
+    </resultMap> 
+    
+    <sql id="Base_Column">name, account, password, gender, status, isDeleted</sql>
+    
+    <select id="getByAccountAndPassword">
+    	SELECT
+    	<include refid="Base_Column"></include>
+    	FROM Administrator
+    	WHERE account=#(account, jdbcType=VARCHAR) AND password=#(password, jdbcType=VARCHAR)
+    </select>
+    
+    <insert id="add" parameterType="com.zplusi.lightProject.bean.administrator.Administrator">
+    	INSERT INTO Administrator(account, password, name, gender, status, isDeleted)
+    	VALUES(#{account},#{password},#{name},#{gender},#{status},#{isDeleted})
+    </insert>
+</mapper>

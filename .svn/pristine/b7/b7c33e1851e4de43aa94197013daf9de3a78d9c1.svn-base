@@ -1,0 +1,34 @@
+package com.zplusi.lightProject.controller.administrator;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.zplusi.lightProject.service.administrator.AdministratorService;
+
+/**
+ * =======================<br/>
+ * 管理员管理控制类，处理管理员管理的前后端交互
+ * Date：2016-12-25 22:31:10
+ * Author：shunhezhang
+ * =======================<br/>
+ * */
+@Controller
+public class AdministratorController {
+
+	@Resource
+	private AdministratorService administratorService;
+	
+	@RequestMapping("/administrator/add_page.html")
+	public String addAdministratorForward () {
+		
+		return "/page/administrator/administrator)_add.jsp";
+	}
+	
+	@RequestMapping("/administrator/add.html")
+	public String addAdministrator () {
+		//administratorService.addAdministrator(administrator);
+		return "";
+	}
+}

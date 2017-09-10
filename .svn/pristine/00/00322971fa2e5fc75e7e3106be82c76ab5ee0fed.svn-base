@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="LightProject">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/controller"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/bean"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/service"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/dao"/>
+        <property name="context-root" value="/LightProject"/>
+        <property name="java-output-path" value="/LightProject/src/main/webapp/src/main/java"/>
+    </wb-module>
+</project-modules>
