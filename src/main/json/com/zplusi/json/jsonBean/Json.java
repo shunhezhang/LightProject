@@ -5,7 +5,7 @@ import com.google.gson.annotations.Expose;
 /**
  * ======================<br/>
  * json返回bean<br/>
- * Date：2016-12-27 22:16:48<br/>
+ * Date：2016-12-27 22:16:50<br/>
  * Author：shunhezhang<br/>
  * ======================<br/>
  * */
