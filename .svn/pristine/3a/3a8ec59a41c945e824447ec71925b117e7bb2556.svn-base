@@ -1,0 +1,22 @@
+datasource.driverClassName=net.sourceforge.jtds.jdbc.Driver
+#com.microsoft.jdbc.sqlserver.SQLServerDriver 
+datasource.url=jdbc\:jtds\:sqlserver\://192.168.1.5\:1433;DatabaseName\=Project
+datasource.username=usher
+datasource.password=123456
+hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+
+
+hibernate.show_sql=false
+hibernate.format_sql=false
+hibernate.max_fetch_depth=1
+hibernate.jdbc.fetch_size=50
+hibernate.jdbc.batch_size=25
+hibernate.generate_statistics=true
+hibernate.connection.release_mode=after_statement
+hibernate.ehcache_config_file=/ehcache/ehcache-hibernate-local.xml
+
+# this config is use to mysql connection
+driver=com.mysql.jdbc.Driver
+url=jdbc\:mysql\://192.168.1.100\:3306/userCenter?allowMultiQueries\=true
+user=root
+password=123456
