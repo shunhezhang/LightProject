@@ -15,7 +15,7 @@ public class Administrator implements java.io.Serializable {
 	 */
 	private static final long serialVersionUID = 7834102993127323120L;
 	@Expose
-	private Long administratorId;
+	private Long id;
 	@Expose
 	private String account;
 	@Expose
@@ -45,12 +45,12 @@ public class Administrator implements java.io.Serializable {
 		this.isDeleted = isDeleted;
 	}
 
-	public Long getAdministratorId() {
-		return this.administratorId;
+	public Long getId() {
+		return this.id;
 	}
 
-	public void setAdministratorId(Long administratorId) {
-		this.administratorId = administratorId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getAccount() {
