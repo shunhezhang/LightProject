@@ -14,6 +14,7 @@ import com.zplusi.lightProject.service.administrator.AdministratorService;
 /**
  * =======================<br/>
  * 管理员管理控制类，处理管理员管理的前后端交互
+ * commit test
  * Date：2016-12-25 22:31:10
  * Author：shunhezhang
  * =======================<br/>
